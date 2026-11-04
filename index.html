@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Réseau de recherche | Accueil</title>
+
+<!-- Carte interactive -->
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">
+      <img src="images/logo-rsm.png"
+       alt="Logo RSM">
+  </div>
+
+  <nav>
+    <a href="#about">Le réseau</a>
+    <a href="#programme">Programme</a>
+    <a href="#actualites">Actualités</a>
+    <a href="#chantiers">Chantiers suivis</a>
+    <a href="veille_bibliographique.html" class="ressources-btn" target="_blank">Ressources</a>
+  </nav>
+</header>
+
+<!-- ACCUEIL -->
+<div class="hero">
+  <div class="hero-content">
+    <div class="eyebrow">Réseau "RSM"</div>
+    <h1>Réseau de R&D <br> Sols et Mécanisation forestière </h1>
+    <p>
+      Réseau national d’acteurs forestiers, rassemblé dans le cadre du PASF Français, pour collaborer en matière de recherche et développement sur 
+      les questions de mécanisation, travaux forestier et gestion durable des sols, dans l’optique d’améliorer les pratiques et équipements à faible 
+      impact nécessaire à la mobilisation des bois.
+    </p>
+      <a href="https://observatoire.foret.gouv.fr/catalogue/plan-national-d-action-pour-la-preservation-des-sols-forestiers" 
+        class="main-btn" 
+        target="_blank" 
+        rel="noopener noreferrer">
+        En savoir plus sur le PASF →</a>
+  </div>
+  <div class="hero-copyright">© Crédit photo / ONF</div>
+</div>
+
+<!-- QUI SOMMES NOUS -->
+<section id="about" class="about">
+  <div>
+    <div class="section-label">Présentation du réseau</div>
+    <h2>Qui sommes-nous ?</h2>
+      <div class="about-text">
+        <p>
+          Créé en 2025 grâce au financement de <strong>l'ADEME</strong>, le réseau RSM est la concrétisation d'une des actions du Plan national d'Action pour la Préservation des sols Forestiers (PASF),
+          en l'occurrence l'action <strong>II.1</strong> visant à mobiliser le bois avec des pratiques et équipements à faible impact.
+        </p>
+        <p>
+          Le réseau est copiloté par les services R&D de <strong>l'ONF</strong>, du <strong>FCBA</strong> ainsi que le <strong>Groupe de Coopération Forestière (GCF)</strong>. 
+          <br>Afin de s'assurer que les orientations de travail du réseau soient en adéquation avec les besoins de la filière forêt-bois, mais également avec les réalités du
+          marché des équipements forestiers, le réseau collabore avec les partenaires suivants :
+        </p>
+        
+        <ul>
+          <li><strong>l'ASCODIF</strong> : Le syndicat des constructeurs et distributeurs de matériels forestiers</li>
+          <li><strong>COPACEL</strong> : L'union des industries des cartons, papiers et celluloses</li>
+          <li><strong>FNB</strong> : La Fédération Nationale du Bois</li>
+          <li><strong>FNEDT</strong> : La Fédération Nationale des Entrepreneurs Des Territoires</li>
+        </ul>
+        <br>
+        <p>
+          Le réseau constitue également une instance d'échange pour la filière avec les représentants des ministères, afin d'interpeller et conseiller 
+          les pouvoirs publics pour la subvention des solutions et matériels identifiés comme pertinents au regard de l'objectif de préservation des sols forestiers. 
+        </p>
+      </div>
+      <a href="https://kdrive.infomaniak.com/app/share/3631376/b2d643c8-cb56-4d82-b34e-f1c511787319" 
+        class="read-more" 
+        target="_blank" 
+        rel="noopener noreferrer">
+        Découvrir la feuille de route du réseau →</a>
+  </div>
+
+  <img src="images/photo_logo.png"
+       alt="Logo des partenaires du réseau">
+</section>
+
+<!-- PROGRAMME -->
+<section id="programme" class="program">
+  <div class="section-label">Nos orientations</div>
+  <h2>Programme d'action</h2>
+  <p>
+    Le programme d’action est constitué des solutions à tester et des connaissances à approfondir retenues par le réseau. 
+    Celui-ci précise le nombre de tests attendus, leurs répartitions entre chaque organisme de R&D et les protocoles utilisés. <br>
+    La priorisation ci-après concerne l’activité du réseau pour le 2ème semestre 2026 et 1er semestre 2027.
+  </p>
+
+  <div class="program-grid">
+
+    <div class="program-card">
+      <div class="number">Priorité 1</div>
+      <h3>Respect spatial des cloisonnement</h3>
+      <p>
+        Étude des solutions permettant au mieux de repérer les cloisonnements, d’en pérenniser l’information et de veiller au respect strict des voies de circulation.
+      </p><br><br>
+      <img src="images/priorite1.png" class="card-image">
+    </div>
+
+    <div class="program-card">
+      <div class="number">Priorité 2</div>
+      <h3>Respect temporel des cloisonnement</h3>
+      <p>
+        Déploiement du service climatique de praticabilité des cloisonnements (Vsoil) visant à mieux anticiper les périodes d'intervention contraintes par 
+        l'humidité des sols.
+      </p><br>
+      <img src="images/priorite2.png" class="card-image">
+    </div>
+
+    <div class="program-card">
+      <div class="number">Priorité 3</div>
+      <h3>Réduire l'impact au sol des travaux sylvicoles</h3>
+      <p>
+        Documentation de l'impact (tassement) sur la bande boisée lors des opérations de broyage. <br>
+        Recherche de matériel permettant de limiter cet impact.
+      </p>
+      <img src="images/priorite3.jpg" class="card-image">
+    </div>
+
+  </div>
+
+  <br><br>
+  <a href="https://kdrive.infomaniak.com/app/share/3631376/34d1a768-9185-42bd-b140-02344d7ec37e" 
+  class="read-more" 
+  target="_blank" 
+  rel="noopener noreferrer">
+  Consulter le programme complet →
+  </a>
+</section>
+
+<!-- ACTUALITES -->
+<section id="actualites">
+  <div class="section-label">La vie du réseau</div>
+  <h2>Actualités</h2>
+  <p class="intro">
+    Retrouvez les dernières informations,
+    publications et événements du réseau.
+  </p>
+
+  <div class="news-grid">
+
+    <article class="news-card">
+      <img src="images/Photo formation.jpeg"
+           alt="Rencontre terrain">
+      <div class="news-content">
+        <div class="news-date">15 OCTOBRE 2026 - Fontainebleau</div>
+        <h3>Formation des chargés de R&D</h3>
+        <p>
+          Formation des chargés de R&D du réseau à l'utilisation des protocoles de mesures.
+        </p>
+        <a href="#" class="read-more">Lire la suite →</a>
+      </div>
+    </article>
+
+    <article class="news-card">
+      <img src="images/photo_temporaire.png"
+           alt="Travail de recherche">
+      <div class="news-content">
+        <div class="news-date">29 SEPTEMBRE 2026</div>
+        <h3>COPIL</h3>
+        <p>
+          COPIL pour le suivi de l'avancement des travaux du réseau
+        </p>
+        <a href="#" class="read-more">Lire la suite →</a>
+      </div>
+    </article>
+
+    <article class="news-card">
+      <img src="images/photo sol.png"
+           alt="Séminaire">
+      <div class="news-content">
+        <div class="news-date">10 JUILLET 2026</div>
+        <h3>Publication du manuel des protocoles</h3>
+        <p>
+          Publication des protocoles de mesures employé par le réseau dans le cadre des suivis de chantier.
+        </p>
+        <a href="#" class="read-more">Lire la suite →</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- CHANTIERS SUIVIS -->
+<section id="chantiers" class="projects">
+  <div class="section-label">Nos actions sur le territoire</div>
+  <h2>Chantiers suivis</h2>
+  <p class="intro">
+    Découvrez les chantier suivis par le réseau
+    et leur implantation géographique.
+    Cliquez sur un point pour découvrir les informations
+    associées à chaque chantier.
+  </p>
+
+  <div class="map-layout">
+
+    <div class="project-list">
+      <h3>Les projets du réseau</h3>
+      <div id="projectList"></div>
+      <p class="map-note">
+        Cliquez sur un projet pour le localiser sur la carte.
+      </p>
+    </div>
+
+    <div>
+      <div id="map"></div>
+      <p class="map-note">
+        Carte interactive – Localisation indicative des chantiers.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="footer-content">
+    <div>
+      <div class="logo" style="color:white">
+      <img src="images/logo-rsm.png"
+       alt="Logo RSM"></div>
+    </div>
+
+    <div>
+      <h3>Navigation</h3>
+      <p><a href="#about">Le réseau</a></p>
+      <p><a href="#programme">Programme d'action</a></p>
+      <p><a href="#actualites">Actualités</a></p>
+    </div>
+
+    <div>
+      <h3>Nous contacter</h3>
+      <p>reseausolsmeca@gmail.com</p>
+      <p>France</p>
+    </div>
+  </div>
+  <br><br>
+  <p>© 2026 – Réseau Sols & Mécanisation. Tous droits réservés.<br>Visuels et contenus protégés</p>
+</footer>
+
+<!-- Script js -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
